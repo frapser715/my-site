@@ -1,0 +1,18 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; font-size: 12pt; line-height: 1.5; color: #333; background: #f4f4f4; }
+a { color: #1a5e2a; text-decoration: none; } a:hover { text-decoration: underline; }
+h1 { font-size: 22pt; color: #1a5e2a; margin: 10px 0 15px; } h2 { font-size: 16pt; color: #2e7d32; margin: 15px 0 10px; } h3 { font-size: 13pt; color: #388e3c; margin: 10px 0 8px; }
+p { margin: 8px 0; }
+#header { background: #fff; border-bottom: 3px solid #2e7d32; padding: 10px 20px; display: flex; align-items: center; gap: 15px; }
+#header img { width: 60px; height: 60px; } .site-name { font-size: 18pt; font-weight: bold; color: #1a5e2a; } .site-slogan { font-size: 10pt; color: #777; }
+#nav { background: #2e7d32; padding: 0 20px; } #nav ul { list-style: none; display: flex; flex-wrap: wrap; } #nav a { display: block; color: #fff; padding: 10px 14px; font-size: 11pt; } #nav a:hover { background: #1a5e2a; text-decoration: none; }
+#container { max-width: 1100px; margin: 20px auto; padding: 0 20px; display: flex; gap: 20px; align-items: flex-start; }
+#content { flex: 3; background: #fff; padding: 20px; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,.1); min-height: 400px; }
+#sidebar { flex: 1; background: #fff; padding: 20px; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,.1); } #sidebar h3 { margin-top: 0; } #sidebar ul { list-style: none; } #sidebar li { padding: 5px 0; border-bottom: 1px dashed #ddd; }
+.cards { display: flex; flex-wrap: wrap; gap: 15px; } .card { width: 220px; border: 1px solid #e0e0e0; border-radius: 6px; overflow: hidden; background: #fafafa; }
+.card img { width: 100%; height: 140px; object-fit: cover; display: block; } .card .card-body { padding: 10px; } .card .price { color: #c62828; font-weight: bold; }
+table { width: 100%; border-collapse: collapse; margin: 10px 0; } th, td { border: 1px solid #ccc; padding: 8px; text-align: left; } th { background: #e8f5e9; }
+#footer { background: #1a5e2a; color: #fff; text-align: center; padding: 20px; margin-top: 30px; font-size: 10pt; } #footer a { color: #c8e6c9; }
+#visitor-counter { background: #e8f5e9; border: 1px solid #a5d6a7; padding: 8px 12px; border-radius: 4px; display: inline-block; margin: 10px 0; font-size: 10pt; }
+#clock { background: #2e7d32; color: #fff; padding: 6px 10px; border-radius: 4px; font-size: 11pt; display: inline-block; margin: 10px 0; }
+@media (max-width: 800px) { #container { flex-direction: column; } #sidebar { width: 100%; } }
